@@ -10,18 +10,33 @@
   </head>
   <body>
     <div class="container">
-    <h1>Movie Tickets</h1>
+    <h1 class="jumbotron">Movie Tickets</h1>
     <p>Please enter your age, desired movie, and when you'd like to see it. We'll let you know how much it will cost.</p>
       <form id="ticket-preference">
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <p><strong>Age</strong></p>
           <select class="form-control" id="age">
             <option>Youth (12 and Under)</option>
             <option>13-55</option>
             <option>Senior (55+)</option>
           </select>
+        </div> -->
+
+        <div class="form-group">
+          <label for="youth">Youth (12 and Under)</label>
+          <input id="youth" class="form-control" type="number" min="0" step="1">
         </div>
+        <div class="form-group">
+          <label for="adult">13-55</label>
+          <input id="adult" class="form-control" type="number" min="0" step="1">
+        </div>
+        <div class="form-group">
+          <label for="senior">Senior (55+)</label>
+          <input id="senior" class="form-control" type="number" min="0" step="1">
+        </div>
+
+
 
         <div class="form-group">
           <p><strong>Movie Title</strong></p>
