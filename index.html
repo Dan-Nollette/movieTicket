@@ -10,59 +10,51 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="jumbotron">Movie Tickets</h1>
-    <p>Please enter your age, desired movie, and when you'd like to see it. We'll let you know how much it will cost.</p>
-      <form id="ticket-preference">
+      <div class="jumbotron">
+        <h1>Movie Tickets</h1>
+        <p>Please enter your age, desired movie, and when you'd like to see it. We'll let you know how much it will cost.</p>
+      </div>
 
-        <!-- <div class="form-group">
-          <p><strong>Age</strong></p>
-          <select class="form-control" id="age">
-            <option>Youth (12 and Under)</option>
-            <option>13-55</option>
-            <option>Senior (55+)</option>
-          </select>
-        </div> -->
+      <div class="well">
+        <form id="ticket-preference">
+          <div class="form-group">
+              <label for="youth">Youth (12 and Under)</label>
+              <input id="youth" class="form-control" type="number" min="0" step="1">
+            </div>
+          <div class="form-group">
+              <label for="adult">13-55</label>
+              <input id="adult" class="form-control" type="number" min="0" step="1">
+            </div>
+          <div class="form-group">
+              <label for="senior">Senior (55+)</label>
+              <input id="senior" class="form-control" type="number" min="0" step="1">
+            </div>
 
-        <div class="form-group">
-          <label for="youth">Youth (12 and Under)</label>
-          <input id="youth" class="form-control" type="number" min="0" step="1">
+          <div class="form-group">
+            <p><strong>Movie Title</strong></p>
+            <select class="form-control" id="movie-title">
+              <option>Dunkirk</option>
+              <option>The Hitman's Bodyguard</option>
+              <option>Pirates of the Caribbean: Dead Men Tell No Tales</option>
+              <option>Guardians of the Galaxy Vol. 2</option>
+            </select>
+          </div>
+
+          <p><strong>Movie Time</strong></p>
+          <div class="form-group">
+            <select class="form-control" id="movie-time">
+              <option>12:00 p.m.</option>
+              <option>2:40 p.m.</option>
+              <option>6:00 p.m.</option>
+              <option>9:15 p.m</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div>
+          <p><span class="price"></span></p>
         </div>
-        <div class="form-group">
-          <label for="adult">13-55</label>
-          <input id="adult" class="form-control" type="number" min="0" step="1">
-        </div>
-        <div class="form-group">
-          <label for="senior">Senior (55+)</label>
-          <input id="senior" class="form-control" type="number" min="0" step="1">
-        </div>
-
-
-
-        <div class="form-group">
-          <p><strong>Movie Title</strong></p>
-          <select class="form-control" id="movie-title">
-            <option>Dunkirk</option>
-            <option>The Hitman's Bodyguard</option>
-            <option>Pirates of the Caribbean: Dead Men Tell No Tales</option>
-            <option>Guardians of the Galaxy Vol. 2</option>
-          </select>
-        </div>
-
-        <p><strong>Movie Time</strong></p>
-        <div class="form-group">
-          <select class="form-control" id="movie-time">
-            <option>12:00 p.m.</option>
-            <option>2:40 p.m.</option>
-            <option>6:00 p.m.</option>
-            <option>9:15 p.m</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn">Submit</button>
-      </form>
-
-      <div>
-        <p><span class="price"></span></p>
       </div>
     </div>
   </body>
