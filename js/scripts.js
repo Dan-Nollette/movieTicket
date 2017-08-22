@@ -14,7 +14,9 @@ Ticket.prototype.price = function() {
   }
 }
 
-
+Ticket.prototype.fullDetails = function() {
+  return "You are " + this.age + " and you want to see \"" + this.title + "\" at " + this.time + "</p><br><p> Your ticket will cost " + this.price();
+}
 
 
 
@@ -27,8 +29,7 @@ $(document).ready(function() {
     var time = $("#movie-time").val();
     var newTicket = new Ticket(age, title, time);
     newTicket.price();
-    // // var output = discountCalc(age, title, time)
-    // $("#price").text("");
-    // $("#price").append("Your price will be:" + output);
+    $("#price").text("");
+    $(".price").append(newTicket.fullDetails());
   });
 });
