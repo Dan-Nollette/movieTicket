@@ -13,12 +13,18 @@
     <h1>Movie Tickets</h1>
     <p>Please enter your age, desired movie, and when you'd like to see it. We'll let you know how much it will cost.</p>
       <form id="ticket-preference">
+
         <div class="form-group">
-          <label for="age">Age</label>
-          <input type="number" class="form-control" id="age">
+          <p><strong>Age</strong></p>
+          <select class="form-control" id="age">
+            <option>Youth (12 and Under)</option>
+            <option>13-55</option>
+            <option>Senior (55+)</option>
+          </select>
         </div>
 
         <div class="form-group">
+          <p><strong>Movie Title</strong></p>
           <select class="form-control" id="movie-title">
             <option>Dunkirk</option>
             <option>The Hitman's Bodyguard</option>
@@ -27,6 +33,7 @@
           </select>
         </div>
 
+        <p><strong>Movie Time</strong></p>
         <div class="form-group">
           <select class="form-control" id="movie-time">
             <option>12:00 p.m.</option>
@@ -36,13 +43,11 @@
           </select>
         </div>
 
-        <div class="price">
-        </div>
-
-
+        <button type="submit" class="btn">Submit</button>
       </form>
 
+      <div class="price">
+      </div>
     </div>
-
   </body>
 </html>
